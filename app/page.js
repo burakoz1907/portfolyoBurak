@@ -184,7 +184,7 @@ export default function Home() {
                       Kodları İncele
                     </a>
                     <a
-                      href="https://araba-katalog.vercel.app/"
+                      href="https://burakoz1907.github.io/arabaKatalog/index.html"
                       className="btn btn-primary"
                     >
                       Siteye Git
