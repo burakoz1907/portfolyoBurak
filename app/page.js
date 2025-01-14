@@ -89,15 +89,52 @@ export default function Home() {
           </p>
         </section>
 
-        <section id="skills" className="mb-5 text-center">
+        <section id="skills" className="mb-5 text-center mt-5">
           <h2>Beceriler</h2>
-          <ul>
-            <p>HTML, CSS, JavaScript</p>
-            <p>React, Next.js</p>
-            <p>Bootstrap, Tailwind CSS</p>
-            <p>Version Control (Git)</p>
-            <p>Responsive Web Design</p>
-          </ul>
+          <div className="row">
+            <div className="col-md-3 mb-3">
+              <i className="fab fa-html5 fa-3x"></i>
+              <img
+                src="/html-5.png"
+                alt="Project 1"
+                style={{ width: "70px" }}
+              />
+            </div>
+            <div className="col-md-3 mb-3">
+              <i className="fab fa-css3-alt fa-3x"></i>
+              <img src="/css-3.png" alt="Project 1" style={{ width: "70px" }} />
+            </div>
+            <div className="col-md-3 mb-3">
+              <i className="fab fa-js-square fa-3x"></i>
+              <img src="/js.png" alt="Project 1" style={{ width: "70px" }} />
+            </div>
+            <div className="col-md-3 mb-3">
+              <i className="fab fa-react fa-3x"></i>
+              <img src="/gitt.png" alt="Project 1" style={{ width: "70px" }} />
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-md-4 mb-3">
+              <i className="fab fa-git fa-3x"></i>
+              <img
+                src="/github.png"
+                alt="Project 1"
+                style={{ width: "70px" }}
+              />
+            </div>
+            <div className="col-md-4 mb-3">
+              <i className="fab fa-bootstrap fa-3x"></i>
+              <img src="/react.png" alt="Project 1" style={{ width: "70px" }} />
+            </div>
+            <div className="col-md-4 mb-3">
+              <i className="fab fa-npm fa-3x"></i>
+              <img
+                src="/bootstrap.png"
+                alt="Project 1"
+                style={{ width: "70px" }}
+              />
+            </div>
+          </div>
         </section>
         <section id="projects" className="text-center">
           <h2>Projelerim</h2>
