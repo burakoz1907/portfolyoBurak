@@ -100,51 +100,45 @@ export default function Home() {
           <div className="row">
             <div className="col-md-3 mb-3">
               <i className="fab fa-html5 fa-3x"></i>
-              <img
-                src="/html-5.png"
-                alt="Project 1"
-                style={{ width: "70px" }}
-              />
+              <img src="/html-5.png" alt="HTML5" style={{ width: "70px" }} />
             </div>
             <div className="col-md-3 mb-3">
               <i className="fab fa-css3-alt fa-3x"></i>
-              <img src="/css-3.png" alt="Project 1" style={{ width: "70px" }} />
+              <img src="/css-3.png" alt="CSS3" style={{ width: "70px" }} />
             </div>
             <div className="col-md-3 mb-3">
               <i className="fab fa-js-square fa-3x"></i>
-              <img src="/js.png" alt="Project 1" style={{ width: "70px" }} />
+              <img src="/js.png" alt="JavaScript" style={{ width: "70px" }} />
             </div>
             <div className="col-md-3 mb-3">
               <i className="fab fa-react fa-3x"></i>
-              <img src="/gitt.png" alt="Project 1" style={{ width: "70px" }} />
+              <img src="/gitt.png" alt="Git" style={{ width: "70px" }} />
             </div>
           </div>
           <div className="row">
             <div className="col-md-4 mb-3">
               <i className="fab fa-git fa-3x"></i>
-              <img
-                src="/github.png"
-                alt="Project 1"
-                style={{ width: "70px" }}
-              />
+              <img src="/github.png" alt="GitHub" style={{ width: "70px" }} />
             </div>
             <div className="col-md-4 mb-3">
               <i className="fab fa-bootstrap fa-3x"></i>
-              <img src="/react.png" alt="Project 1" style={{ width: "70px" }} />
+              <img src="/react.png" alt="React" style={{ width: "70px" }} />
             </div>
             <div className="col-md-4 mb-3">
               <i className="fab fa-npm fa-3x"></i>
               <img
                 src="/bootstrap.png"
-                alt="Project 1"
+                alt="Bootstrap"
                 style={{ width: "70px" }}
               />
             </div>
           </div>
         </section>
+
         <section id="projects" className="text-center">
           <h2>Projelerim</h2>
           <div className="row">
+            {/* Mevcut projeler */}
             <div className="col-md-4 mb-3">
               <div className="card">
                 <img src="/net.png" className="card-img-top" alt="Project 1" />
@@ -245,12 +239,38 @@ export default function Home() {
                 </div>
               </div>
             </div>
+            <div className="col-md-4 mb-3">
+              <div className="card">
+                <img
+                  src="/githubb.jpg"
+                  className="card-img-top"
+                  alt="Project 5"
+                />
+                <div className="card-body">
+                  <h5 className="card-title">Github Users</h5>
+                  <div className="d-flex gap-2 align-items-center justify-content-center">
+                    <a
+                      href="https://github.com/burakoz1907/gihubUsers"
+                      className="btn btn-success"
+                    >
+                      Kodları İncele
+                    </a>
+                    <a
+                      href="https://gihub-users.vercel.app/"
+                      className="btn btn-primary"
+                    >
+                      Siteye Git
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
       </main>
 
       <footer className="bg-light text-center py-3 mt-5">
-        <p className="mb-0">&copy; 2025 Burak Öz.</p>
+        <p className="mb-0">&copy; 2025 Burak Öz. Tüm Hakları Saklıdır.</p>
       </footer>
     </>
   );
