@@ -1,95 +1,266 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+"use client";
+
+import "bootstrap/dist/css/bootstrap.min.css";
+import { useEffect } from "react";
+import Head from "next/head";
 
 export default function Home() {
-  return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>app/page.js</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+  useEffect(() => {
+    import("bootstrap/dist/js/bootstrap.bundle.min.js");
+  }, []);
 
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
+  return (
+    <>
+      <Head>
+        <title>My Portfolio</title>
+        <meta
+          name="description"
+          content="A portfolio site built with Next.js and Bootstrap"
+        />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+
+      <header>
+        <nav className="navbar navbar-expand-lg navbar-light bg-light">
+          <div className="container">
+            <a className="navbar-brand" href="/">
+              Burak Öz
+            </a>
+            <button
+              className="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span className="navbar-toggler-icon"></span>
+            </button>
+            <div className="collapse navbar-collapse" id="navbarNav">
+              <ul className="navbar-nav ms-auto">
+                <li className="nav-item">
+                  <a className="nav-link" href="#home">
+                    Anasayfa
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link" href="#about">
+                    Hakkımda
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link" href="#skills">
+                    Beceriler
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link" href="#projects">
+                    Projelerim
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <main className="container mt-5">
+        <section id="home" className="mb-5 text-center">
+          <div>
+            <img
+              src="/photo.jpg"
+              alt="Profile Picture"
+              className="img-fluid rounded-circle"
+              style={{ width: "150px", height: "150px", objectFit: "cover" }}
             />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
-        </div>
+            <h1>Burak Öz</h1>
+            <p className="lead">JR. Front End Developer</p>
+          </div>
+        </section>
+
+        <section id="about" className="mb-5 text-center">
+          <h2>Hakkımda</h2>
+          <p>
+            Merhaba, ben Burak Öz. 20 yaşındayım ve İstanbul'da yaşıyorum.
+            Kariyerime front-end geliştirici olarak devam etmek için büyük bir
+            tutku ve azimle çalışıyorum. Teknolojiye olan ilgim, yenilikçi ve
+            kullanıcı dostu web çözümleri üretme isteğimle birleşiyor.
+          </p>
+        </section>
+
+        <section id="skills" className="mb-5 text-center">
+          <h2>Beceriler</h2>
+          <ul>
+            <p>HTML, CSS, JavaScript</p>
+            <p>React, Next.js</p>
+            <p>Bootstrap, Tailwind CSS</p>
+            <p>Version Control (Git)</p>
+            <p>Responsive Web Design</p>
+          </ul>
+        </section>
+        <section id="projects" className="text-center">
+          <h2>Projelerim</h2>
+          <div className="row">
+            <div className="col-md-4 mb-3">
+              <div className="card">
+                <img src="/net.png" className="card-img-top" alt="Project 1" />
+                <div className="card-body">
+                  <h5 className="card-title">Netflix Clone</h5>
+                  <div className="d-flex gap-2 align-items-center justify-content-center">
+                    <a
+                      href="https://github.com/burakoz1907/NetflixClone"
+                      className="btn btn-success"
+                    >
+                      Kodları İncele
+                    </a>
+                    <a
+                      href="https://netflix-clone-76u89aj1l-burakoz1907s-projects.vercel.app/"
+                      className="btn btn-primary"
+                    >
+                      Siteye Git
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-4 mb-3">
+              <div className="card">
+                <img
+                  src="/araba.png"
+                  className="card-img-top"
+                  alt="Project 2"
+                />
+                <div className="card-body">
+                  <h5 className="card-title">Araba Katalog</h5>
+                  <div className="d-flex gap-2 align-items-center justify-content-center">
+                    <a
+                      href="https://github.com/burakoz1907/arabaKatalog"
+                      className="btn btn-success"
+                    >
+                      Kodları İncele
+                    </a>
+                    <a
+                      href="https://araba-katalog.vercel.app/"
+                      className="btn btn-primary"
+                    >
+                      Siteye Git
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-4 mb-3">
+              <div className="card">
+                <img
+                  src="/klavye.png"
+                  className="card-img-top"
+                  alt="Project 3"
+                />
+                <div className="card-body">
+                  <h5 className="card-title">Figma Tasarım</h5>
+                  <div className="d-flex gap-2 align-items-center justify-content-center">
+                    <a
+                      href="https://github.com/burakoz1907/keyboardMaster"
+                      className="btn btn-success"
+                    >
+                      Kodları İncele
+                    </a>
+                    <a
+                      href="https://keyboard-master-tau.vercel.app/"
+                      className="btn btn-primary"
+                    >
+                      Siteye Git
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-4 mb-3">
+              <div className="card">
+                <img
+                  src="/klavye.png"
+                  className="card-img-top"
+                  alt="Project 3"
+                />
+                <div className="card-body">
+                  <h5 className="card-title">Figma Tasarım</h5>
+                  <div className="d-flex gap-2 align-items-center justify-content-center">
+                    <a
+                      href="https://github.com/burakoz1907/keyboardMaster"
+                      className="btn btn-success"
+                    >
+                      Kodları İncele
+                    </a>
+                    <a
+                      href="https://keyboard-master-tau.vercel.app/"
+                      className="btn btn-primary"
+                    >
+                      Siteye Git
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-4 mb-3">
+              <div className="card">
+                <img
+                  src="/klavye.png"
+                  className="card-img-top"
+                  alt="Project 3"
+                />
+                <div className="card-body">
+                  <h5 className="card-title">Figma Tasarım</h5>
+                  <div className="d-flex gap-2 align-items-center justify-content-center">
+                    <a
+                      href="https://github.com/burakoz1907/keyboardMaster"
+                      className="btn btn-success"
+                    >
+                      Kodları İncele
+                    </a>
+                    <a
+                      href="https://keyboard-master-tau.vercel.app/"
+                      className="btn btn-primary"
+                    >
+                      Siteye Git
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-4 mb-3">
+              <div className="card">
+                <img
+                  src="/klavye.png"
+                  className="card-img-top"
+                  alt="Project 3"
+                />
+                <div className="card-body">
+                  <h5 className="card-title">Figma Tasarım</h5>
+                  <div className="d-flex gap-2 align-items-center justify-content-center">
+                    <a
+                      href="https://github.com/burakoz1907/keyboardMaster"
+                      className="btn btn-success"
+                    >
+                      Kodları İncele
+                    </a>
+                    <a
+                      href="https://keyboard-master-tau.vercel.app/"
+                      className="btn btn-primary"
+                    >
+                      Siteye Git
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+
+      <footer className="bg-light text-center py-3 mt-5">
+        <p className="mb-0">&copy; 2025 Burak Öz.</p>
       </footer>
-    </div>
+    </>
   );
 }
