@@ -3,6 +3,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import { useEffect } from "react";
 import Head from "next/head";
+import Link from "next/link";
 
 export default function Home() {
   useEffect(() => {
@@ -76,6 +77,11 @@ export default function Home() {
             />
             <h1>Burak Öz</h1>
             <p className="lead">JR. Front End Developer</p>
+            <button className="btn btn-danger text-dark">
+              <Link className="button" href="/burak.pdf" target="_blank">
+                CV Görüntüle
+              </Link>
+            </button>
           </div>
         </section>
 
