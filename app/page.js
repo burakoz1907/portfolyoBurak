@@ -222,73 +222,21 @@ export default function Home() {
             <div className="col-md-4 mb-3">
               <div className="card">
                 <img
-                  src="/klavye.png"
+                  src="/hesapp.png"
                   className="card-img-top"
-                  alt="Project 3"
+                  alt="Project 4"
                 />
                 <div className="card-body">
-                  <h5 className="card-title">Figma Tasarım</h5>
+                  <h5 className="card-title">Hesap Makinesi</h5>
                   <div className="d-flex gap-2 align-items-center justify-content-center">
                     <a
-                      href="https://github.com/burakoz1907/keyboardMaster"
+                      href="https://github.com/burakoz1907/carculator"
                       className="btn btn-success"
                     >
                       Kodları İncele
                     </a>
                     <a
-                      href="https://keyboard-master-tau.vercel.app/"
-                      className="btn btn-primary"
-                    >
-                      Siteye Git
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-4 mb-3">
-              <div className="card">
-                <img
-                  src="/klavye.png"
-                  className="card-img-top"
-                  alt="Project 3"
-                />
-                <div className="card-body">
-                  <h5 className="card-title">Figma Tasarım</h5>
-                  <div className="d-flex gap-2 align-items-center justify-content-center">
-                    <a
-                      href="https://github.com/burakoz1907/keyboardMaster"
-                      className="btn btn-success"
-                    >
-                      Kodları İncele
-                    </a>
-                    <a
-                      href="https://keyboard-master-tau.vercel.app/"
-                      className="btn btn-primary"
-                    >
-                      Siteye Git
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-4 mb-3">
-              <div className="card">
-                <img
-                  src="/klavye.png"
-                  className="card-img-top"
-                  alt="Project 3"
-                />
-                <div className="card-body">
-                  <h5 className="card-title">Figma Tasarım</h5>
-                  <div className="d-flex gap-2 align-items-center justify-content-center">
-                    <a
-                      href="https://github.com/burakoz1907/keyboardMaster"
-                      className="btn btn-success"
-                    >
-                      Kodları İncele
-                    </a>
-                    <a
-                      href="https://keyboard-master-tau.vercel.app/"
+                      href="https://carculator-jade.vercel.app/"
                       className="btn btn-primary"
                     >
                       Siteye Git
