@@ -158,7 +158,7 @@ export default function Home() {
                       Kodları İncele
                     </a>
                     <a
-                      href="https://netflix-clone-76u89aj1l-burakoz1907s-projects.vercel.app/"
+                      href="https://netflix-clone-rho-azure.vercel.app/"
                       className="btn btn-primary"
                     >
                       Siteye Git
